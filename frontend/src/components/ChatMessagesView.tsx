@@ -14,10 +14,10 @@ import {
 } from "@/components/ActivityTimeline"; // Assuming ActivityTimeline is in the same dir or adjust path
 
 // Markdown component props type from former ReportView
-type MdComponentProps = {
+type MdComponentProps = React.HTMLAttributes<HTMLElement> & {
   className?: string;
   children?: ReactNode;
-  [key: string]: any;
+  href?: string;
 };
 
 // Markdown components (from former ReportView.tsx)
